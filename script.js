@@ -27,9 +27,3 @@ function process(result) {
         $("#results").append("</table>")
     }
 }
-
-// var row = document.createElement("tr");
-// var column = document.createElement("td");
-//
-// row.appendChild(column);
-// document.getElementById("primary").appendChild(row);
