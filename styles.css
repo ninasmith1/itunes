@@ -1,0 +1,27 @@
+#button, #results, .title, h1{
+    text-align: center;
+    display: block;
+    margin: 10px auto 0px auto;
+    font-family: "Arial";
+}
+
+#searchTerm{
+    display: block;
+    margin: 0px auto 0px auto;
+    color: #1576dc;
+
+}
+
+#number{
+    text-align: center;
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
+td, th{
+    column: solid 3px white;
+}
+
+#table{
+    margin-top: 10px;
+}
