@@ -2,7 +2,7 @@ $(document).ready(function(){
     $("#button").click(function(){
         var searchTerm = $("#searchTerm").val();
         $("#results").empty();
-        $.get("https://itunes.apple.com/search?term=" + searchTerm, process);
+        $.get("http://itunes.apple.com/search?term=" + searchTerm, process);
     });
 });
 
