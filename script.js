@@ -28,6 +28,6 @@ function process(result) {
             $("#table").append("</tr>");
 
         }
-        $("#results").append("</table>")
+        $("#results").append("</table>");
     }
 }
