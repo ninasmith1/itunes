@@ -3,9 +3,16 @@ $(document).ready(function(){
         var searchTerm = $("#searchTerm").val();
         $("#results").empty();
         $.ajax({
-            url: "https://itunes.apple.com/search?term=" + searchTerm,
+            url: "https://itunes.apple.com/search?term=" + $("#searchTerm").val(),
+            type: 'GET',
+            crossDomain: true,
             dataType: 'jsonp',
-            success: process
+            success: function (result) {
+                process(result);
+            },
+            error: function () {
+                alert('Failed!');
+            }
         });
     });
 });
