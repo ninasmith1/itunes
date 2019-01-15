@@ -2,12 +2,16 @@ $(document).ready(function(){
     $("#button").click(function(){
         var searchTerm = $("#searchTerm").val();
         $("#results").empty();
-        $.get("https://itunes.apple.com/search?term=" + searchTerm, process);
+        $.ajax({
+            url: "https://itunes.apple.com/search?term=" + searchTerm,
+            dataType: 'jsonp',
+            success: process
+        });
     });
 });
 
 function process(result) {
-    var myResult = JSON.parse(result);
+    var myResult = result;
     var numResults = $("#number").val();
     $("#results").append('<table class="w3-table-all" id="table">');
     if(myResult.resultCount == 0){
